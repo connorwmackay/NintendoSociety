@@ -2,6 +2,7 @@
     <head>
         <title>Nintendo Society</title>
         <link rel="stylesheet" type="text/css" href="style/navBar.css">
+        <script src="scripts/navBarMenu.js" async></script>
     </head>
     <body>
         <nav>
@@ -9,7 +10,7 @@
 
             <ul>
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.html" class="currentPage">Home</a>
                 <li>
                     <a href="#">Members</a>
                 </li>
@@ -24,7 +25,7 @@
                     <a href="#">Contact</a>
                 </li>
                 <li>
-                    <button>Menu</button>
+                    <button onclick="handleSubMenu();">Menu</button>
                 </li>
 
                 <!-- Social Links-->
@@ -43,4 +44,6 @@
             </ul>
         </nav>
     </body>
+
+    
 </html>

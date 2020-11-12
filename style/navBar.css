@@ -2,7 +2,7 @@
 	display: flex;
 	flex-grow: 1;
 	font-size: 18px;
-	background-color: lightblue;
+	background-color: #FA8072;
 	margin-bottom: 2em;
 }
 
@@ -11,6 +11,11 @@ nav ul li {
 	position: relative;
 	float: left;
 	list-style-type: none;
+}
+
+#socialLinks {
+	position: absolute;
+	right: 3%;
 }
 
 nav ul li a {

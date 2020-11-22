@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<!-- 
+Group: 					Nintendo Boyz
+Webpage developed by: 	Connor Mackay
+!-->
+
+<html>
+    <head>
+        <title>Nintendo Society</title>
+        <meta charset="utf-8">
+        
+        <!-- Our Stylesheets !-->
+        <link rel="stylesheet" type="text/css" href="style/navBar.css">
+        <link rel="stylesheet" type="text/css" href="style/calendar.css">
+		
+		<!-- Unsemantic !-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unsemantic/1.2.3/unsemantic-grid-responsive.min.css" integrity="sha512-LAimmZ/VX13iV1VJ3xThr5qWRKvji/fNwQrqvxcxQJxZ440lzwGipJGkvPBEKXcHcv+iH/F/Lw2YtnybNR7kEg==" crossorigin="anonymous" />
+		<meta name="viewport" content=" width=device-width, initial-scale=1 minimum-scale=1 maximum-scale=1" />
+		
+    </head>
+    
+    <body>
+		<nav id="navbar">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Members</a></li>
+				<li><a href="#">Gallery</a></li>
+				<li><a href="events_calendar.html" id="currentPage">Calendar</a></li>
+				<li><a href="#">History</a></li>
+				<li><a href="#">Pokemon</a></li>
+				<li><a href="#">Versions</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">FAQ</a></li>
+			</ul>
+			
+			<section id="socialLinks">
+				<ul>
+					<li><a href="#">Twitter</a></li>
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Instagram</a></li>
+				</ul>
+			</section>
+		</nav>
+
+		<div id="calendar">
+			<div id="calendarHeader">
+				<button onclick="updateCalendarDatesBackward();">Prev</button>
+				<h2 id="calendarMonthYearName">January 2021</h2>
+				<button onclick="updateCalendarDatesForward();">Next</button>
+			</div>
+			<table>
+				<thead>
+					<tr class="calendarWeekdayNameRow">
+						<td class="calendarWeekdayName">Sun</td>
+						<td class="calendarWeekdayName">Mon</td>
+						<td class="calendarWeekdayName">Tue</td>
+						<td class="calendarWeekdayName">Wed</td>
+						<td class="calendarWeekdayName">Thu</td>
+						<td class="calendarWeekdayName">Fri</td>
+						<td class="calendarWeekdayName">Sat</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="calendarDayItemRow">
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+					</tr>
+					
+					<tr class="calendarDayItemRow">
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+					</tr>
+					
+					<tr class="calendarDayItemRow">
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+					</tr>
+					
+					<tr class="calendarDayItemRow">
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+					</tr>
+					
+					<tr class="calendarDayItemRow">
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+					</tr>
+					
+					<tr class="calendarDayItemRow">
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+						<td class="calendarDayItem">
+							<p class="calendarDayNumber">XX</p>
+							<p class="calendarEventName"></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<script src="scripts/calendar.js"></script>
+    </body>
+</html>

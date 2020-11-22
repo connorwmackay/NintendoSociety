@@ -1,0 +1,33 @@
+#calendar {
+	position: relative;
+}
+
+.calendarDayItem {
+	width: 7em;
+	height: 7em;
+	border: 1px solid black;
+	position: relative;
+}
+
+.calendarWeekdayName {
+	width: 7em;
+	border: 1px solid black;
+}
+
+.calendarDayNumber {
+	position: absolute;
+	top: 0;
+	left: 5%;
+}
+
+.notInMonth {
+	color: blue;
+}
+
+#calendarHeader {
+	margin-left: 12%;
+}
+
+#calendarMonthYearName {
+	display: inline;
+}

@@ -1,0 +1,7 @@
+/* Accordian classes styled by: Connor Mackay  */
+
+.accordianButton, .accordianButtonSelected {
+    width: 25em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}

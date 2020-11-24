@@ -37,3 +37,67 @@ function showAccordianContainer(element, groupElement) {
         element.style.display="block";
     }
 }
+
+//
+// Gallery
+// UI
+//
+let galleryGroupList = document.getElementsByClassName("galleryGroup");
+
+for (let i=0; i < galleryGroupList.length; i++)
+{
+    let group = galleryGroupList[i];
+    let nextBtn = group.getElementsByClassName("galleryNextBtn")[0];
+    let prevBtn = group.getElementsByClassName("galleryPrevBtn")[0];
+
+    nextBtn.addEventListener("click", function() {
+        for (let j=0; j < group.getElementsByTagName("img").length; j++)
+        {
+            let img = group.getElementsByTagName("img")[j];
+            if (img.style.display=="block") {
+                let len = group.getElementsByTagName("img").length;
+                console.log(group.getElementsByTagName("img")[0]);
+                console.log(j === len-1);
+                if (j === len-1) {
+                    group.getElementsByTagName("img")[0].style.display="block";
+                    img.style.display="none";
+                    break;
+                } else {
+                    console.log("Next");
+                    group.getElementsByTagName("img")[(j+1)].style.display="block";
+                    img.style.display="none";
+                    break;
+                }
+            }
+        }
+    }, false);
+
+    prevBtn.addEventListener("click", function() {
+        for (let j=0; j < group.getElementsByTagName("img").length; j++)
+        {
+            let img = group.getElementsByTagName("img")[j];
+            if (img.style.display=="block") {
+                if (j === 0)
+                {
+                    let len = group.getElementsByTagName("img").length;
+                    group.getElementsByTagName("img")[len-1].style.display="block";
+                    img.style.display="none";
+                    break;
+                } else {
+                    group.getElementsByTagName("img")[j-1].style.display="block";
+                    img.style.display="none";
+                    break;
+                }
+            }
+        }
+    }, false);
+
+    for (let j=0; j < group.getElementsByTagName("img").length; j++)
+    {
+        let img = group.getElementsByTagName("img")[j];
+        img.style.display="none";
+        if (j === 0) {
+            img.style.display="block";
+        }
+    }
+}

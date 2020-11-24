@@ -5,3 +5,38 @@
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
+
+.galleryGroup {
+    position: relative;
+    width: min-content;
+}
+
+.galleryPrevBtn {
+    position: absolute;
+    left: 1%;
+    top: 50%;
+    background: url('../images/material_design/before_arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 48px 48px;
+    width: 48px;
+    height: 48px;
+    background-color: none;
+    border: none;
+}
+
+.galleryNextBtn {
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    background: url('../images/material_design/next_arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 48px 48px;
+    width: 48px;
+    height: 48px;
+    background-color: none;
+    border: none;
+}
+
+.galleryPrevBtn:hover, .galleryNextBtn:hover  {
+    border: 1px solid black;
+}

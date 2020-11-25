@@ -25,7 +25,9 @@ Webpage developed by: 	Connor Mackay
     <body>
     	<!-- Navigation Bar !-->
 		<nav id="navbar">
-			<ul>
+			<button id="navMenu" onclick="navMenu()"><i class="lni lni-32 lni-menu"></i></button>
+
+			<ul id="navLinks">
 				<li><a href="index.html" id="currentPage"><i class="lni lni-home"></i> Home</a></li>
 				<li><a href="#"><i class="lni lni-blogger"></i> Blog</a></li>
 				<li><a href="members.html"><i class="lni lni-user"></i> Members</a></li>
@@ -35,7 +37,7 @@ Webpage developed by: 	Connor Mackay
 				<li><a href="pokemon.html"><i class="lni lni-postcard"></i> Pokemon</a></li>
 				<li><a href="#"><i class="lni lni-layers"></i> Versions</a></li>
 				<li><a href="#"><i class="lni lni-phone"></i> Contact</a></li>
-				<li><a href="#"><i class="lni lni-question-circle"></i> FAQ</a></li>
+				<li id="lastNavItem"><a href="#"><i class="lni lni-question-circle"></i> FAQ</a></li>
 			</ul>
 			
 			<section id="socialLinks">
@@ -47,33 +49,41 @@ Webpage developed by: 	Connor Mackay
 			</section>
 		</nav>
 
-			<div class="grid-50 suffix-25">
-				<section class="galleryGroup">
-			      <button class="galleryPrevBtn"></button>
-			      <button class="galleryNextBtn"></button>
-			      <img src="images/switchExample.png" height="240">
-			      <img src="images/nintendo1.jpg" height="240">
-			      <img src="images/nintendo2.jpg" height="240">
-			      <img src="images/nintendo3.png" height="240">
-    			</section>
+		<div class="grid-container" id="homeMainBody">
+			<div class="grid-100">
+				<section class="galleryGroup" id="homeGallery">
+				  <button class="galleryPrevBtn"></button>
+				  <button class="galleryNextBtn"></button>
+				  <img class="homeGalleryImg" src="images/switchExample.png">
+				  <img class="homeGalleryImg" src="images/nintendo1.jpg">
+				  <img class="homeGalleryImg" src="images/nintendo2.jpg">
+				  <img class="homeGalleryImg" src="images/nintendo3.png">
+				</section>
 
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus convallis nisl vel tortor rutrum convallis. Cras pretium, lorem sit amet ullamcorper convallis, nulla magna dapibus neque, quis finibus enim quam nec nibh. Fusce at bibendum velit, nec lacinia libero. Nam commodo varius eros, lobortis ultricies velit sodales et. Sed nec tristique tellus. Duis pretium lacus eget elementum blandit. Aliquam vel ultrices mi. Proin ut odio malesuada, consectetur sem eget, tristique odio. Nunc nisl mi, sollicitudin et maximus quis, tempus in quam. In hac habitasse platea dictumst. Donec scelerisque erat velit, eget eleifend mauris eleifend sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In semper, lorem ut faucibus pretium, mauris ipsum sodales nunc, quis blandit massa ante id magna. Donec blandit mauris eget risus ornare congue.
 				</p>
-				<button>Find out More!</button>
+				<button>Find out More!</button><br />
+			</div>
 		</div>
-	
-		<div class="grid-25">
-			<form class="registerInterest">
-				<h3>Register Interest</h3>
-				<input type="text" id="firstName" name="firstName" placeholder="First Name">	
-				<input type="text" id="lastName" name="lastName" placeholder="Last Name"><br />
-				<input type="email" id="registerInterestEmail" name="email" placeholder="Email Address"><br />
-				<input type="submit" id="registerInterestSubmit" value="Send">
-			</form>
+
+		<div class="grid-container" id="homeBelowMainBody">
+			<div class="grid-50 suffix-10">
+				<a class="twitter-timeline" data-lang="en" data-width="600" data-height="800" data-theme="light" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+			<div class="grid-40">
+				<form class="registerInterest">
+					<h3>Register Interest</h3>
+					<input type="text" id="firstName" name="firstName" placeholder="First Name">
+					<input type="text" id="lastName" name="lastName" placeholder="Last Name"><br />
+					<input type="email" id="registerInterestEmail" name="email" placeholder="Email Address"><br />
+					<input type="submit" id="registerInterestSubmit" value="Send">
+				</form>
+			</div>
 		</div>
 
 		<script src="scripts/boilerplate.js"></script>
+		<script src="scripts/navbar.js"></script>
     </body>
     
 </html>

@@ -1,3 +1,6 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+
 /* Colour Scheme */
 :root {
     --background: #f7f7f7; /* White Colour */
@@ -13,9 +16,6 @@
     --textHover: blue;
 }
 
-/* Font import */
-@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
-
 /* Universal styles */
 body {
 	font-family: 'Epilogue', sans-serif;
@@ -24,43 +24,182 @@ body {
 }
 
 /* Navbar  -- Connor Mackay */
-#navbar {
-	display: flex;
-	flex-grow: 1;
-	font-size: 18px;
-	background-color: var(--foreground);
-	margin-bottom: 2em;
-	border-radius: 1em;
+
+/* Mobile */
+@media screen and (max-width: 1299px) {
+	#currentPage {
+		color: var(--textAlt);
+	}
+
+	#navbar {
+		display: flex;
+		flex-grow: 1;
+		font-size: 18px;
+		background-color: var(--foreground);
+		margin-bottom: 2em;
+		border-radius: 1em;
+	}
+
+	nav ul li {
+		color: var(--textAlt);
+		margin-left: 0.8em;
+		position: relative;
+		list-style-type: none;
+	}
+
+	nav button {
+		display: inline;
+		margin-top: 0.5em;
+		margin-left: 0.5em;
+		margin-bottom: 0.5em;
+		background: none;
+		border: none;
+		color: var(--textAlt);
+	}
+
+	#socialLinks {
+		position: absolute;
+		top: 0.005%;
+		right: 5%;
+		color: var(--textAlt);
+	}
+
+	#socialLinks li {
+		float: left;
+		display: inline;
+	}
+
+	nav ul li a {
+		text-decoration: none;
+		color: var(--textAlt);
+	}
+
+	nav ul li a:hover {
+		color: var(--textAlt);
+	}
+
+	/* Main mobile changes */
+	#navLinks {
+		display: none;
+		z-index: 1000;
+		top: 2em;
+		position: absolute;
+		width: 80%;
+		height: min-content;
+		padding-bottom: 0.3em;
+	}
+
+	#navLinks li{
+		background-color: var(--foreground);
+		positon: absolute;
+		left: 1%;
+		padding-left: 0.1em;
+		padding-top: 0.6em;
+		padding-bottom: 0.1em;
+		width: 90%;
+	}
+
+	#navLinks li a {
+		display: inline-block;
+		width: 100%;
+	}
+
+	#navLinks li:hover {
+		background-color: var(--secondary);
+		color: var(--textAlt);
+	}
+
+	#lastNavItem {
+		border-radius: 0px 0px 0.5em 0.5em;
+	}
+
+	#socialLinks li a:hover {
+		color: var(--textHover);
+	}
 }
 
-nav ul li {
-	color: var(--textAlt);
-	margin-left: 0.8em;
-	position: relative;
-	float: left;
-	list-style-type: none;
-}
+/* Desktop */
+@media screen and (min-width: 1300px) {
+	#navLinks {
+		display: inline;
+	}
 
-#socialLinks {
-	position: absolute;
-	top: 0.5%;
-	right: 3%;
-}
+	#navbar {
+		display: flex;
+		flex-grow: 1;
+		font-size: 18px;
+		background-color: var(--foreground);
+		margin-bottom: 2em;
+		border-radius: 1em;
+	}
 
-nav ul li a {
-	text-decoration: none;
-	color: var(--textAlt);
-}
+	#navMenu {
+		display: none;
+	}
 
-nav ul li a:hover {
-	color: var(--textHover);
-}
+	nav ul li {
+		color: var(--textAlt);
+		margin-left: 0.8em;
+		position: relative;
+		float: left;
+		list-style-type: none;
+	}
 
-#currentPage {
-	color: var(--textHighlight);
+	#socialLinks {
+		position: absolute;
+		top: 0.5%;
+		right: 3%;
+	}
+
+	nav ul li a {
+		text-decoration: none;
+		color: var(--textAlt);
+	}
+
+	nav ul li a:hover {
+		color: var(--textHover);
+	}
+
+	#currentPage {
+		color: var(--textHighlight);
+	}
 }
 
 /* Home Page -- Connor Mackay */
+#homeMainBody {
+	padding-bottom: 3em;
+	border-bottom: 3px solid var(--foreground);
+}
+
+#homeGallery {
+	left: 5%;
+}
+
+@media screen and (max-width: 900px) {
+	#homeGallery img {
+		width: 360px;
+		height: 160px;
+	}
+}
+
+@media screen and (min-width: 901px) {
+	#homeGallery img {
+		width: 810px;
+		height: 360px;
+	}
+}
+
+@media screen and (min-width: 1800px) {
+	#homeGallery img {
+		width: 1080px;
+		height: 480px;
+	}
+}
+
+#homeBelowMainBody {
+	margin-top: 3em;
+}
+
 .registerInterest h3 {
 	position: relative;
 	left: 30%;
@@ -69,13 +208,13 @@ nav ul li a:hover {
 .registerInterest input {
 	font-size: 14px;
 	margin-bottom: 0.5em;
-	width: 13.5em;
+	width: 45%;
 	height: 2em;
 	border: 0.12em solid var(--foreground);
 }
 
 #registerInterestEmail {
-	width: 27.8em;
+	width: 93%;
 	height: 2em;
 	position: relative;
 }
@@ -134,11 +273,7 @@ nav ul li a:hover {
 
 .galleryGroup {
     position: relative;
-    width: 100%;
-}
-
-.galleryGroup img {
-	width: 100%;
+    width: min-content;
 }
 
 .galleryPrevBtn {

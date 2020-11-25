@@ -1,0 +1,308 @@
+/* Colour Scheme */
+:root {
+    --background: #f7f7f7; /* White Colour */
+    --foreground: #D80100; /* Red Colour */
+
+    --primary: #000000;
+    --secondary: #2b41ff;
+
+    /* Text */
+    --text: black;
+    --textAlt: #f7f7f7;
+    --textHighlight: #2b41ff;
+    --textHover: blue;
+}
+
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+
+/* Universal styles */
+body {
+	font-family: 'Epilogue', sans-serif;
+	background-color: var(--background);
+	color: var(--text);
+}
+
+/* Navbar  -- Connor Mackay */
+#navbar {
+	display: flex;
+	flex-grow: 1;
+	font-size: 18px;
+	background-color: var(--foreground);
+	margin-bottom: 2em;
+	border-radius: 1em;
+}
+
+nav ul li {
+	color: var(--textAlt);
+	margin-left: 0.8em;
+	position: relative;
+	float: left;
+	list-style-type: none;
+}
+
+#socialLinks {
+	position: absolute;
+	top: 0.5%;
+	right: 3%;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: var(--textAlt);
+}
+
+nav ul li a:hover {
+	color: var(--textHover);
+}
+
+#currentPage {
+	color: var(--textHighlight);
+}
+
+/* Home Page -- Connor Mackay */
+.registerInterest h3 {
+	position: relative;
+	left: 30%;
+}
+
+.registerInterest input {
+	font-size: 14px;
+	margin-bottom: 0.5em;
+	width: 13.5em;
+	height: 2em;
+	border: 0.12em solid var(--foreground);
+}
+
+#registerInterestEmail {
+	width: 27.8em;
+	height: 2em;
+	position: relative;
+}
+
+#registerInterestSubmit {
+	background-color: var(--secondary);
+	color: var(--textAlt);
+	border: none;
+	border-radius: 1em;
+	position: relative;
+	left: 24%;
+}
+
+/* Calendar -- Connor Mackay */
+#calendar {
+	position: absolute;
+	left: 25%;
+}
+
+.calendarDayItem {
+	width: 7em;
+	height: 7em;
+	border: 1px solid black;
+	position: relative;
+}
+
+.calendarWeekdayName {
+	width: 7em;
+	border: 1px solid black;
+}
+
+.calendarDayNumber {
+	position: absolute;
+	top: 0;
+	left: 5%;
+}
+
+.notInMonth {
+	color: blue;
+}
+
+#calendarHeader {
+	margin-left: 33%;
+}
+
+#calendarMonthYearName {
+	display: inline;
+}
+
+/* Boilerplate -- Connor Mackay */
+.accordianButton, .accordianButtonSelected {
+    width: 25em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.galleryGroup {
+    position: relative;
+    width: 100%;
+}
+
+.galleryGroup img {
+	width: 100%;
+}
+
+.galleryPrevBtn {
+    position: absolute;
+    left: 1%;
+    top: 50%;
+    background: url('../images/material_design/before_arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 48px 48px;
+    width: 48px;
+    height: 48px;
+    background-color: none;
+    border: none;
+}
+
+.galleryNextBtn {
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    background: url('../images/material_design/next_arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 48px 48px;
+    width: 48px;
+    height: 48px;
+    background-color: none;
+    border: none;
+}
+
+.galleryPrevBtn:hover, .galleryNextBtn:hover  {
+    border: 1px solid black;
+}
+
+/* Page Content - Alex McN */
+.subtitle {
+  background-color: #96b6eb;
+  text-align: center;
+}
+.pfp {
+  width: 250px;
+  height: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Image gallery for blog - Neil ---------------------------------------------------------------- */
+
+.responsiveGallery {
+	box-sizing: border-box;
+	padding: 0 6px;
+	float: left;
+	width: 25%;
+}
+
+.blogGallery {
+	border: 1px solid #ccc;
+}
+
+.blogGallery img {
+	width: 100%;
+	height: auto;
+}
+
+/*Media query to make images the right size depending on the screen size.
+If the screen has a width above 700px, 4 images will be shown side by side.
+If the screen has a width below 700px, 2 images will be shown side by side.
+If the screen has a width below 500px, 4 images will be aligned vertically.
+*/
+
+@media only screen and (max-width: 500px) {
+	.responsiveGallery {
+		width: 50%;
+		margin: 6px 0;
+	}
+}
+
+@media only screen and (max-width: 500px){
+	.responsiveGallery {
+		width: 100%;
+	}
+}
+
+
+
+
+/*Blog - Neil ---------------------------------------------------------------------------------------- */
+
+
+#wrapper {
+	width: 900px;
+	margin-left: 100px;
+	margin-right: auto;
+	display: grid;
+	padding-top: 20px;
+}
+
+#header {
+	background-color: #eff2f7;
+	height: 80px;
+	width: 80%;
+	margin-bottom: 10px;
+	border-radius: 25px;
+	font-family: Tahoma;
+
+}
+
+.post {
+	background-color: #FA8072;
+	padding: 5px;
+	width: 75%;
+	border: 3px solid lightblue;
+
+}
+
+
+/*Sidebar ---------------------------------------------------------------------------------- */
+
+.sidebar {
+	width: 200px;
+	height: 300px;
+	margin-top: 20px;
+	float: right;
+	border: 3px solid lightblue;
+
+}
+
+/*Contact form -------------------------------------------------------------------------- */
+
+.message; {
+	width: 100px
+	height: 100px;
+}
+
+.letter {
+	width: 300px;
+	height: 250px;
+	float: right;
+	border: 3px solid lightblue;
+	border-radius: 30px;
+	margin-right: 50px;
+	margin-top: 50px;
+	background-color: #FA8072;
+}
+
+.letter p, h2 {
+	margin-left: 10px;
+}
+.formDiv {
+	margin-left: 25px;
+	float: left;
+	margin-top: 8px;
+}
+
+.map {
+	width: 600px;
+	height: 300px;
+	border: 3px solid lightblue;
+	border-radius: 30px;
+	background-color: #FA8072;
+	margin-top: 400px;
+	margin-left: 800px;
+}
+
+.map iframe {
+	float: right;
+	padding: 10px;
+}

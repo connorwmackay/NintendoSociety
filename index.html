@@ -11,83 +11,69 @@ Webpage developed by: 	Connor Mackay
         <meta charset="utf-8">
         
         <!-- Our Stylesheets !-->
-        <link rel="stylesheet" type="text/css" href="style/navBar.css">
+        <link rel="stylesheet" type="text/css" href="style/stylesheet.css">
 		
 		<!-- Unsemantic !-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unsemantic/1.2.3/unsemantic-grid-responsive.min.css" integrity="sha512-LAimmZ/VX13iV1VJ3xThr5qWRKvji/fNwQrqvxcxQJxZ440lzwGipJGkvPBEKXcHcv+iH/F/Lw2YtnybNR7kEg==" crossorigin="anonymous" />
 		<meta name="viewport" content=" width=device-width, initial-scale=1 minimum-scale=1 maximum-scale=1" />
+
+		<!-- LineIcons !-->
+		<link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
 		
     </head>
     
     <body>
+    	<!-- Navigation Bar !-->
 		<nav id="navbar">
 			<ul>
-				<li><a href="index.html" id="currentPage">Home</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Members</a></li>
-				<li><a href="#">Gallery</a></li>
-				<li><a href="events_calendar.html">Calendar</a></li>
-				<li><a href="#">History</a></li>
-				<li><a href="#">Pokemon</a></li>
-				<li><a href="#">Versions</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">FAQ</a></li>
+				<li><a href="index.html" id="currentPage"><i class="lni lni-home"></i> Home</a></li>
+				<li><a href="#"><i class="lni lni-blogger"></i> Blog</a></li>
+				<li><a href="members.html"><i class="lni lni-user"></i> Members</a></li>
+				<li><a href="#"><i class="lni lni-gallery"></i> Gallery</a></li>
+				<li><a href="events_calendar.html"><i class="lni lni-calendar"></i> Events</a></li>
+				<li><a href="#"><i class="lni lni-alarm-clock"></i> History</a></li>
+				<li><a href="pokemon.html"><i class="lni lni-postcard"></i> Pokemon</a></li>
+				<li><a href="#"><i class="lni lni-layers"></i> Versions</a></li>
+				<li><a href="#"><i class="lni lni-phone"></i> Contact</a></li>
+				<li><a href="#"><i class="lni lni-question-circle"></i> FAQ</a></li>
 			</ul>
 			
 			<section id="socialLinks">
 				<ul>
-					<li><a href="#">Twitter</a></li>
-					<li><a href="#">Facebook</a></li>
-					<li><a href="#">Instagram</a></li>
+					<li><a href="#"><i class="lni lni-32 lni-twitter-filled"></i> </a></li>
+					<li><a href="#"><i class="lni lni-32 lni-facebook-oval"></i></a></li>
+					<li><a href="#"><i class="lni lni-32 lni-instagram-filled"> </i></a></li>
 				</ul>
 			</section>
 		</nav>
-	
-		<div class="grid-container">
-			</div>
-			<div class="grid-50">
-				<h2>Welcome to the Nintendo Society!</h2>
+
+			<div class="grid-50 suffix-25">
+				<section class="galleryGroup">
+			      <button class="galleryPrevBtn"></button>
+			      <button class="galleryNextBtn"></button>
+			      <img src="images/switchExample.png" height="240">
+			      <img src="images/nintendo1.jpg" height="240">
+			      <img src="images/nintendo2.jpg" height="240">
+			      <img src="images/nintendo3.png" height="240">
+    			</section>
+
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus convallis nisl vel tortor rutrum convallis. Cras pretium, lorem sit amet ullamcorper convallis, nulla magna dapibus neque, quis finibus enim quam nec nibh. Fusce at bibendum velit, nec lacinia libero. Nam commodo varius eros, lobortis ultricies velit sodales et. Sed nec tristique tellus. Duis pretium lacus eget elementum blandit. Aliquam vel ultrices mi. Proin ut odio malesuada, consectetur sem eget, tristique odio. Nunc nisl mi, sollicitudin et maximus quis, tempus in quam. In hac habitasse platea dictumst. Donec scelerisque erat velit, eget eleifend mauris eleifend sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In semper, lorem ut faucibus pretium, mauris ipsum sodales nunc, quis blandit massa ante id magna. Donec blandit mauris eget risus ornare congue.
 				</p>
 				<button>Find out More!</button>
-				<div class="grid-container">
-					<div class="grid-50">
-					<h2>Upcoming Events</h2>
-						<div>
-							<h3>Gaming Night</h3>
-							<p>
-								An enjoyable gaming night held on the 3rd January 2021.
-							</p>
-						</div>
-						<div>
-							<h3>Nintendo Quiz</h3>
-							<p>
-								A head-to-head quiz night held on the 10th January 2021.
-							</p>
-						</div>
-					</div>
-					
-					<div class="grid-50">
-						<h2>Latest Blog Posts</h2>
-						<embed type="text/html" src="blogpreview.html" width="100%" height="25%">
-					</div>
-			</div>
 		</div>
-		
+	
 		<div class="grid-25">
-			<p></p>
+			<form class="registerInterest">
+				<h3>Register Interest</h3>
+				<input type="text" id="firstName" name="firstName" placeholder="First Name">	
+				<input type="text" id="lastName" name="lastName" placeholder="Last Name"><br />
+				<input type="email" id="registerInterestEmail" name="email" placeholder="Email Address"><br />
+				<input type="submit" id="registerInterestSubmit" value="Send">
+			</form>
 		</div>
-		
-		<div class="grid-25">
-				<form>
-					<h3>Register Interest</h3>
-					<input type="text" id="firstName" name="firstName" placeholder="First Name">
-					<input type="text" id="lastName" name="lastName" placeholder="Last Name">
-					<input type="email" id="email" name="email" placeholder="Email Address"><br />
-					<input type="submit" value="Send">
-				</form>
-		</div>
+
+		<script src="scripts/boilerplate.js"></script>
     </body>
     
 </html>

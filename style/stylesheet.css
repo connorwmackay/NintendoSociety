@@ -445,6 +445,7 @@ If the screen has a width below 500px, 4 images will be aligned vertically.
 /*Members page and Pokemon page (Alex McNaughton) -------------------------------------------------------------------------- */
 
 .subtitle {
+  font-family: 'Epilogue', sans-serif;
   background-color: #96b6eb;
   text-align: center;
 }
@@ -453,6 +454,7 @@ If the screen has a width below 500px, 4 images will be aligned vertically.
   height: 250px;
 }
 .content {
+  font-family: 'Epilogue', sans-serif;
   padding: 5px;
   background-color: white;
 }

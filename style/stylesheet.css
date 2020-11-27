@@ -180,10 +180,28 @@ body {
 	left: 5%;
 }
 
+#homeButton {
+	position: relative;
+	border: none;
+	padding: 1em;
+	left: 45%;
+	background-color: var(--foreground);
+	color: var(--textAlt);
+}
+
 @media screen and (max-width: 900px) {
 	#homeGallery img {
 		width: 360px;
 		height: 160px;
+	}
+
+	#homeButton {
+		position: relative;
+		border: none;
+		padding: 1em;
+		left: 35%;
+		background-color: var(--foreground);
+		color: var(--textAlt);
 	}
 }
 

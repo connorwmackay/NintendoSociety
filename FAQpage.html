@@ -1,49 +1,89 @@
 <!DOCTYPE html>
-
-<!-- Adam Murray -->
-
-<html>
+<html lang="en">
 <head>
-	<title>Nintendo Society</title>
-	
-	<meta charset="utf-8">
-        
-        <!-- Stylesheets !-->
-        <link rel="stylesheet" type="text/css" href="style/stylesheet.css">
-		<link rel="stylesheet" type="text/css" href="style/faq_style.css">
-		
-		<nav id="navbar">
-		<ul>
-			<li><a href="home.html">Home</a></li>
-			<li><a href="blog.html">Blog</a></li>
-			<li><a href="members.html">Members</a></li>
-			<li><a href="gallery.html">Gallery</a></li>
-			<li><a href="calendar.html">Calendar</a></li>
-			<li><a href="history.html">History</a></li>
-			<li><a href="pokemon.html">Pokemon</a></li>
-			<li><a href="versions.html">Versions</a></li>
-			<li><a href="contact.html">Contact</a></li>
-			<li><a href="FAQpage.html" id="currentPage">FAQ</a></li>
-		</ul>
-		
-		<section id="socialLinks">
-			<ul>
-				<li><a href="#">Twitter</a></li>
-				<li><a href="#">Facebook</a></li>
-				<li><a href="#">Instagram</a></li>
-			</ul>
-		</section>
-	</nav>
-		
-</head>
+    <meta charset="UTF-8">
+    <title>Nintendo Society</title>
 
+    <link rel="stylesheet" type="text/css" href="style/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="style/faq_style.css">
+
+    <!-- Unsemantic !-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/unsemantic/1.2.3/unsemantic-grid-responsive.min.css" integrity="sha512-LAimmZ/VX13iV1VJ3xThr5qWRKvji/fNwQrqvxcxQJxZ440lzwGipJGkvPBEKXcHcv+iH/F/Lw2YtnybNR7kEg==" crossorigin="anonymous" />
+    <meta name="viewport" content=" width=device-width, initial-scale=1 minimum-scale=1 maximum-scale=1" />
+
+    <!-- LineIcons !-->
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+</head>
 <body>
+    <nav id="navbar">
+        <button id="navMenu" onclick="navMenu()"><i class="lni lni-32 lni-menu"></i></button>
+
+        <ul id="navLinks">
+            <!-- Home Page -- by Connor !-->
+            <li><a href="index.html" id="currentPage">
+                <i class="lni lni-home"></i> Home</a>
+            </li>
+
+            <!-- Blog Page -- by Neil !-->
+            <li><a href="blog.html">
+                <i class="lni lni-blogger"></i> Blog</a>
+            </li>
+
+            <!-- Members Page -- by Alex -->
+            <li><a href="members.html">
+                <i class="lni lni-user"></i> Members</a>
+            </li>
+
+            <!-- Gallery Page -- by Norvin !-->
+            <li><a href="gallery.html">
+                <i class="lni lni-gallery"></i> Gallery</a>
+            </li>
+
+            <!-- Events Page by Connor !-->
+            <li><a href="events_calendar.html">
+                <i class="lni lni-calendar"></i> Events</a>
+            </li>
+
+            <!-- History Page by Norvin !-->
+            <li><a href="history.html">
+                <i class="lni lni-alarm-clock"></i> History</a>
+            </li>
+
+            <!-- Pokemon Page by Alex !-->
+            <li><a href="pokemon.html">
+                <i class="lni lni-postcard"></i> Pokemon</a>
+            </li>
+
+            <!-- Versions Page by Adam !-->
+            <li><a href="versions.html">
+                <i class="lni lni-layers"></i> Versions</a>
+            </li>
+
+            <!-- Contact Page by Neil !-->
+            <li><a href="contact.html">
+                <i class="lni lni-phone"></i> Contact</a>
+            </li>
+
+            <!-- FAQ Page by Adam !-->
+            <li id="lastNavItem">
+                <a href="FAQpage.html"><i class="lni lni-question-circle"></i> FAQ</a>
+            </li>
+        </ul>
+
+        <section id="socialLinks">
+            <ul>
+                <li><a href="#"><i class="lni lni-32 lni-twitter-filled"></i> </a></li>
+                <li><a href="#"><i class="lni lni-32 lni-facebook-oval"></i></a></li>
+                <li><a href="#"><i class="lni lni-32 lni-instagram-filled"> </i></a></li>
+            </ul>
+        </section>
+    </nav>
 	
 	<h2>FAQ</h2>
 	
 	<div class="faq">
 		
-		<img src="images/mario_luigi.png" alt="Mario and Luigi" width="26%" height="auto" style="float:right">
+		<img src="images/mario_luigi.png" alt="Mario and Luigi" width="25%" height="auto" style="float:right">
 		
 		<h3>How old is Nintendo?</h3>
 		<p>Nintendo, was founded on the 23rd of September, 1889. Nintendo was originally a toy manufacturer company in Japan founded by Fusajiro Yamauchi.</p>
@@ -70,7 +110,7 @@
 			<label for="email">please enter your email:</label>
 			<input type="text" name="email" value="" />
 		
-			<label for"comments">Please enter your question:</label>
+			<label for "comments">Please enter your question:</label>
 			<textarea name="question" cols="45" rows="5"></textarea>
 		
 			<input type="submit" value="Submit" />

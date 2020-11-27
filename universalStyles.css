@@ -1,8 +1,13 @@
-/*navbar*/
 body {
   font-family: sans-serif;
   background-color: #4a4a4a;
 }
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* navbar */
 nav ul li {
   margin-left: 0.5em;
   position: relative;
@@ -17,7 +22,7 @@ nav ul li a:hover {
   color: blue;
   text-decoration: underline;
 }
-nav, section, img {
+nav, section, img, p {
   border-radius: 5px;
 }
 #navbar {
@@ -46,7 +51,8 @@ nav, section, img {
 .pfp {
   width: 250px;
   height: 250px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+}
+.content {
+  padding: 5px;
+  background-color: white;
 }

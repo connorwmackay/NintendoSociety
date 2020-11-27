@@ -23,10 +23,16 @@ body {
 	color: var(--text);
 }
 
-/* Navbar  -- Connor Mackay */
+/*
+ *
+ *
+ * Connor's CSS
+ *
+ *
+ */
 
-/* Mobile */
-@media screen and (max-width: 1299px) {
+/* Navbar */
+@media screen and (max-width: 1299px) { /* Mobile */
 	#currentPage {
 		color: var(--textAlt);
 	}
@@ -78,7 +84,6 @@ body {
 		color: var(--textAlt);
 	}
 
-	/* Main mobile changes */
 	#navLinks {
 		display: none;
 		z-index: 1000;
@@ -165,7 +170,7 @@ body {
 	}
 }
 
-/* Home Page -- Connor Mackay */
+/* Home Page */
 #homeMainBody {
 	padding-bottom: 3em;
 	border-bottom: 3px solid var(--foreground);
@@ -228,40 +233,164 @@ body {
 	left: 24%;
 }
 
-/* Calendar -- Connor Mackay */
-#calendar {
-	position: absolute;
-	left: 25%;
+/* Calendar */
+@media screen and (min-width: 901px) {
+	#calendar {
+		position: absolute;
+		left: 25%;
+	}
+
+	.calendarDayItem {
+		position: relative;
+		width: 7em;
+		min-width: 7em;
+		height: 7em;
+		background-color: #ff6666;
+		color: white;
+		border: none;
+	}
+
+	.calendarDayItem:hover {
+		color: var(--secondary);
+	}
+
+	.calendarWeekdayName {
+		width: 7em;
+		max-width: 7em;
+		border: none;
+		background-color: var(--foreground);
+		color: var(--textAlt);
+	}
+
+	#currentDay {
+		color: var(--secondary);
+	}
+
+	.calendarDayNumber {
+		position: absolute;
+		top: 0;
+		left: 5%;
+	}
+
+	.notInMonth {
+		color: #c0bab4;
+	}
+
+	#calendarHeader {
+		margin-left: 33%;
+		margin-bottom: 1%;
+	}
+
+	#calendarMonthYearName {
+		display: inline;
+	}
+
+	.calendarButton {
+		position: absolute;
+		border: none;
+		background-color: var(--foreground);
+		padding: 0.5em;
+		color: var(--textAlt);
+	}
+
+	#calendarNext {
+		right: 5%;
+	}
+
+	#calendarPrev {
+		left: 5%;
+	}
+
+	.calendarButton:hover {
+		border: 1px solid var(--secondary);
+	}
 }
 
-.calendarDayItem {
-	width: 7em;
-	height: 7em;
-	border: 1px solid black;
-	position: relative;
+@media screen and (max-width: 1799px) {
+	#calendar {
+		position: absolute;
+		left: 2%;
+	}
 }
 
-.calendarWeekdayName {
-	width: 7em;
-	border: 1px solid black;
-}
+@media screen and (max-width: 900px) { /* Mobile */
+	#calendar {
+		position: absolute;
+		left: 2%;
+		font-size: 14px;
+	}
 
-.calendarDayNumber {
-	position: absolute;
-	top: 0;
-	left: 5%;
-}
+	.calendarDayItem {
+		position: relative;
+		width: 5em;
+		height: 5em;
+		background-color: #ff6666;
+		color: white;
+		border: none;
+	}
 
-.notInMonth {
-	color: blue;
-}
+	.calendarEventName {
+		position: absolute;
+		top: 17%;
+	}
 
-#calendarHeader {
-	margin-left: 33%;
-}
+	.calendarDayItem:hover {
+		color: var(--secondary);
+	}
 
-#calendarMonthYearName {
-	display: inline;
+	.calendarWeekdayName {
+		width: 5em;
+		border: none;
+		background-color: var(--foreground);
+		color: var(--textAlt);
+	}
+
+	#currentDay {
+		color: var(--secondary);
+	}
+
+	.calendarDayNumber {
+		position: absolute;
+		top: 0;
+		left: 5%;
+	}
+
+	.notInMonth {
+		color: #c0bab4;
+	}
+
+	#calendarHeader {
+		margin-left: 15%;
+		margin-bottom: 6%;
+	}
+
+	#calendarMonthYearName {
+		display: inline;
+		position: absolute;
+		margin: auto;
+		top: 1%;
+		left: 35%;
+	}
+
+	.calendarButton {
+		position: absolute;
+		border: none;
+		background-color: var(--foreground);
+		padding: 0.5em;
+		color: var(--textAlt);
+	}
+
+	#calendarNext {
+		right: 5%;
+	}
+
+	#calendarPrev {
+		left: 5%;
+	}
+
+	.calendarButton:hover {
+		border: 1px solid var(--secondary);
+	}
 }
 
 /* Boilerplate -- Connor Mackay */
@@ -306,7 +435,15 @@ body {
     border: 1px solid black;
 }
 
-/* Page Content - Alex McN */
+/*
+ *
+ *
+ * Alex's CSS
+ *
+ *
+ */
+
+/* Page Content */
 .subtitle {
   background-color: #96b6eb;
   text-align: center;
@@ -318,6 +455,14 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+/*
+ *
+ *
+ * Neil's CSS
+ *
+ *
+ */
 
 /*Image gallery for blog - Neil ---------------------------------------------------------------- */
 
@@ -334,7 +479,7 @@ body {
 
 .blogGallery img {
 	width: 100%;
-	height: auto;
+	height: 15vw;
 }
 
 /*Media query to make images the right size depending on the screen size.
@@ -357,87 +502,153 @@ If the screen has a width below 500px, 4 images will be aligned vertically.
 }
 
 
-
-
 /*Blog - Neil ---------------------------------------------------------------------------------------- */
 
-
-#wrapper {
-	width: 900px;
-	margin-left: 100px;
+#blogWrapper {
+	width: 70%;
 	margin-right: auto;
 	display: grid;
-	padding-top: 20px;
+	padding-top: 5%;
 }
 
-#header {
+#BlogHeader {
 	background-color: #eff2f7;
-	height: 80px;
-	width: 80%;
-	margin-bottom: 10px;
-	border-radius: 25px;
-	font-family: Tahoma;
-
+	height: 10%;
+	width: 70%;
+	margin-bottom: 1%;
+}
+#BlogHeader h1 {
+	margin-left: 1%;
 }
 
-.post {
-	background-color: #FA8072;
-	padding: 5px;
-	width: 75%;
-	border: 3px solid lightblue;
-
+.BlogPost {
+	background-color: #D80100;
+	width: 70%;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
 }
+.BlogPost h1, p {
+	margin-left: 1%;
+}
+
 
 
 /*Sidebar ---------------------------------------------------------------------------------- */
 
 .sidebar {
-	width: 200px;
-	height: 300px;
-	margin-top: 20px;
+	width: 20%;
+	height: 50%;
+	margin-top: 6%;
 	float: right;
-	border: 3px solid lightblue;
+	margin-right: 3%;
+	border: 3px solid #D80100;
+	padding: 1%;
+}
+
+.sidebar ul {
+	list-style-position: inside;
 
 }
 
-/*Contact form -------------------------------------------------------------------------- */
 
-.message; {
-	width: 100px
-	height: 100px;
+
+/*Blog table ----------------------------------------------------------------------------------- */
+#t01 {
+	width:100%;
+}
+
+#t01 table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+#t01 th, td {
+	padding: 1.3%;
+	text-align: left;
+}
+
+#t01 th {
+	background-color: lightblue;
+}
+
+/*Modal from W3 schools --------------------------------------------------------------------------------- */
+/* The Modal (background) */
+
+.sidebar button {
+	margin-left: 3%;
+}
+
+
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 10%; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+.modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 2%;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+/* The Close Button */
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+/*Contact form (contact page) -------------------------------------------------------------------------- */
+.message {
+	position: relative;
+	width: 10%;
+	height: 10%;
 }
 
 .letter {
-	width: 300px;
-	height: 250px;
+	position: relative;
+	width: 25%;
 	float: right;
+	margin-top: 3%;
 	border: 3px solid lightblue;
-	border-radius: 30px;
-	margin-right: 50px;
-	margin-top: 50px;
-	background-color: #FA8072;
+	border-radius: 2.5%;
+	right: 0.5%;
+	background-color: #D80100;
 }
 
 .letter p, h2 {
-	margin-left: 10px;
+	margin-left: 4%;
 }
 .formDiv {
-	margin-left: 25px;
+	margin-left: 2.5%;
 	float: left;
-	margin-top: 8px;
+	margin-top: 1%;
 }
-
 .map {
-	width: 600px;
-	height: 300px;
+	position: fixed;
 	border: 3px solid lightblue;
-	border-radius: 30px;
-	background-color: #FA8072;
-	margin-top: 400px;
-	margin-left: 800px;
-}
-
-.map iframe {
-	float: right;
-	padding: 10px;
+	bottom: 1%;
+	border-radius: 2.5%;
+	height: 45%;
+	right: 1%;
+	width: 35%;
 }

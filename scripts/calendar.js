@@ -60,13 +60,23 @@ function renderCalendar(dayOneIndex) {
 	let lastMonth = tmpDate.getMonth();
 	
 	calendarTitle.innerHTML = monthList[updatedDate.getMonth()] + " " + updatedDate.getFullYear();
-	
-	
+
+	let currentDate = new Date();
 	for (let i=0; i < calendarDayNumberList.length; i++) {
 		let element = calendarDayNumberList.item(i);
 		let elementName = calendarEventNameList.item(i);
 		
 		elementName.innerHTML = "";
+
+		if (tmpDate.getDate() === currentDate.getDate() &&
+			tmpDate.getMonth() === currentDate.getMonth() &&
+			tmpDate.getFullYear === currentDate.getFullYear) {
+			element.parentElement.id = "currentDay";
+		} else {
+			if (element.parentElement.id == "currentDay") {
+				element.parentElement.id = "";
+			}
+		}
 
 		if (i < dayOneIndex || (i > dayOneIndex && tmpDate.getMonth() != lastMonth)) {
 			element.className += " notInMonth";

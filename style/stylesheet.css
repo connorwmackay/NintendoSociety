@@ -400,7 +400,7 @@ If the screen has a width below 500px, 4 images will be aligned vertically.
 
 }
 
-/*Contact form -------------------------------------------------------------------------- */
+/*Contact form ----------------------------------------------------------------------------- */
 
 .message; {
 	width: 100px
@@ -440,4 +440,19 @@ If the screen has a width below 500px, 4 images will be aligned vertically.
 .map iframe {
 	float: right;
 	padding: 10px;
+}
+
+/*Members page and Pokemon page (Alex McNaughton) -------------------------------------------------------------------------- */
+
+.subtitle {
+  background-color: #96b6eb;
+  text-align: center;
+}
+.pfp {
+  width: 250px;
+  height: 250px;
+}
+.content {
+  padding: 5px;
+  background-color: white;
 }

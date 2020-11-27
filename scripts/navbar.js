@@ -1,3 +1,4 @@
+// Developed by Connor Mackay
 let navLinks = document.getElementById("navLinks");
 let nav = document.getElementsByTagName("nav")[0];
 let numClicked = 0;

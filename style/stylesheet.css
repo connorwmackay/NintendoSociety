@@ -21,6 +21,7 @@ body {
 	font-family: 'Epilogue', sans-serif;
 	background-color: var(--background);
 	color: var(--text);
+	overflow-x: hidden;
 }
 
 /*
@@ -32,6 +33,12 @@ body {
  */
 
 /* Navbar */
+
+nav p {
+	margin-left: 2em;
+	color: var(--textAlt);
+}
+
 @media screen and (max-width: 1299px) { /* Mobile */
 	#currentPage {
 		color: var(--textAlt);
@@ -176,9 +183,7 @@ body {
 	border-bottom: 3px solid var(--foreground);
 }
 
-#homeGallery {
-	left: 5%;
-}
+
 
 #homeButton {
 	position: relative;
@@ -189,7 +194,27 @@ body {
 	color: var(--textAlt);
 }
 
+#homeButton a, #homeButton a:visited {
+	text-decoration: none;
+	text-underline: none;
+	color: var(--textAlt);
+}
+
+#homeGallery {
+	left: -5%;
+}
+
+@media screen and (max-width: 1300px) {
+	#homeGallery {
+		left: 5%;
+	}
+}
+
 @media screen and (max-width: 900px) {
+	#homeGallery {
+		left: 5%;
+	}
+
 	#homeGallery img {
 		width: 360px;
 		height: 160px;
@@ -214,8 +239,8 @@ body {
 
 @media screen and (min-width: 1800px) {
 	#homeGallery img {
-		width: 1080px;
-		height: 480px;
+		width: 1350px;
+		height: 600px;
 	}
 }
 
@@ -255,14 +280,15 @@ body {
 @media screen and (min-width: 901px) {
 	#calendar {
 		position: absolute;
+		max-width: 930px;
 		left: 25%;
 	}
 
 	.calendarDayItem {
 		position: relative;
-		width: 7em;
-		min-width: 7em;
-		height: 7em;
+		width: 130px;
+
+		height: 110px;
 		background-color: #ff6666;
 		color: white;
 		border: none;
@@ -273,8 +299,7 @@ body {
 	}
 
 	.calendarWeekdayName {
-		width: 7em;
-		max-width: 7em;
+		width: 130px;
 		border: none;
 		background-color: var(--foreground);
 		color: var(--textAlt);
@@ -288,10 +313,6 @@ body {
 		position: absolute;
 		top: 0;
 		left: 5%;
-	}
-
-	.notInMonth {
-		color: #c0bab4;
 	}
 
 	#calendarHeader {
@@ -321,6 +342,14 @@ body {
 
 	.calendarButton:hover {
 		border: 1px solid var(--secondary);
+	}
+
+	.calendarEventName {
+		overflow: hidden;
+	}
+
+	.greyed {
+		color: gray;
 	}
 }
 
@@ -371,10 +400,6 @@ body {
 		position: absolute;
 		top: 0;
 		left: 5%;
-	}
-
-	.notInMonth {
-		color: #c0bab4;
 	}
 
 	#calendarHeader {
@@ -589,7 +614,7 @@ If the screen has a width below 500px, 4 images will be aligned vertically.
 	background-color: lightblue;
 }
 
-/*Modal from W3 schools Neil --------------------------------------------------------------------------------- */
+/* Modal -- Neil --------------------------------------------------------------------------------- */
 /* The Modal (background) */
 
 .sidebar button {
@@ -636,7 +661,7 @@ If the screen has a width below 500px, 4 images will be aligned vertically.
 	cursor: pointer;
 }
 /*Contact page Neil -------------------------------------------------------------------------- */
-.message; {
+.message {
 	width: 10%;
 	height: 10%;
 }
@@ -669,4 +694,54 @@ If the screen has a width below 500px, 4 images will be aligned vertically.
 	height: 20vw;
 	right: 1%;
 	width: 30vw;
+}
+
+/*
+*
+* Norvin's CSS
+*
+ */
+
+
+/*Gallery Page and History Page - Norvin R -------------------------------------------------------------------------- */
+
+.gallery {
+	text-align: center;
+	font-size: 30px;
+	width: 100%;
+	height: auto;
+	border-bottom: solid;
+	border-color: black;
+	border-width: -10px auto;
+}
+
+
+.galleryimgs {
+	float: left;
+	width: 33.33%;
+	padding: 70px;
+	width: 300px;
+	height: 300px;
+}
+
+.historyinfo {
+	font-weight: bold;
+	color: rgb(0, 0, 0);
+	word-spacing: 4px;
+	line-height: 1.4;
+	border-style: solid;
+	border-color: rgb(255, 0, 0);
+	border-width: 5px;
+	background-color: rgba(0, 0, 0, 0.493);
+}
+
+.pictext {
+	font-size: 20px;
+	text-align: center;
+	width: 400px;
+	height: auto;
+	text-decoration: underline;
+	background-color: red;
+	border-style: dashed;
+	border-color: black;
 }

@@ -19,6 +19,7 @@ function navMenu() {
 window.addEventListener("resize", function() {
     if (window.innerWidth > 1299) {
         navLinks.style.display = "block";
+        body.style.window.innerWidth
     } else {
         navLinks.style.display = "none";
     }

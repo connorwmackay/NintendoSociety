@@ -78,19 +78,20 @@ function renderCalendar(dayOneIndex) {
 			}
 		}
 
-		if (i < dayOneIndex || (i > dayOneIndex && tmpDate.getMonth() != lastMonth)) {
-			element.className += " notInMonth";
-		} else {
-			lastMonth = tmpDate.getMonth();
-			element.className = "calendarDayNumber";
-		}
-
 		for (let j=0; j < eventList.length; j++) {
 			if (eventList[j].date.getDate() == tmpDate.getDate() &&
 				eventList[j].date.getMonth() == tmpDate.getMonth() &&
 				eventList[j].date.getFullYear() == tmpDate.getFullYear()) {
 				elementName.innerHTML = eventList[j].eventName;
 			}
+		}
+
+		if (i < dayOneIndex || (i > dayOneIndex && tmpDate.getMonth() != lastMonth)) {
+			element.className += " greyed";
+			elementName.innerHTML = "";
+		} else {
+			lastMonth = tmpDate.getMonth();
+			element.className = "calendarDayNumber";
 		}
 		
 		element.innerHTML = tmpDate.getDate();

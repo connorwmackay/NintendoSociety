@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Nintendo Society - *Page Name* </title>
-    <link rel="icon" type="image/png" href="images/rgu_logo.png">
+    <title>Nintendo Society</title>
 
     <link rel="stylesheet" type="text/css" href="style/stylesheet.css">
 
@@ -14,15 +13,14 @@
     <!-- LineIcons !-->
     <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
 </head>
-<body>
+<body>   
+
     <nav id="navbar">
         <button id="navMenu" onclick="navMenu()"><i class="lni lni-32 lni-menu"></i></button>
 
-        <p><b>Nintendo Society</b></p>
-
         <ul id="navLinks">
             <!-- Home Page -- by Connor !-->
-            <li><a href="index.html" id="currentPage">
+            <li><a href="index.html">
                 <i class="lni lni-home"></i> Home</a>
             </li>
 
@@ -37,7 +35,7 @@
             </li>
 
             <!-- Gallery Page -- by Norvin !-->
-            <li><a href="gallery.html">
+            <li><a href="gallery.html" id="currentPage">
                 <i class="lni lni-gallery"></i> Gallery</a>
             </li>
 
@@ -80,8 +78,56 @@
             </ul>
         </section>
     </nav>
+    <section class="gallery">
+        <h1>Gallery Page</h1>
+      </section>
 
-    <!-- Put content here !-->
+      <div class="row">
+        <div class="galleryimgs">
+          <img src="gallerypics/dslite.jpg" alt="dslite" style="width:400px; height:300px;">
+          <div class="pictext">
+          <h2>Nintendo DSlite</h2>
+        </div>
+        </div>
+
+        <div class="galleryimgs">
+          <img src="gallerypics/nintendoswitch.jpg" alt="switch" style="width:400px; height:300px;">
+          <div class="pictext">
+            <h2>Nintendo Switch</h2>
+          </div>
+        </div>
+
+        <div class="galleryimgs">
+          <img src="gallerypics/retrogames.png" alt="retro" style="width:400px; height:300px;">
+          <div class="pictext">
+            <h2>Retro Games</h2>
+          </div>
+        </div>
+
+        <div class="galleryimgs">
+            <img src="gallerypics/supermariobros.jpg" alt="bros" style="width:400px; height:300px;">
+            <div class="pictext">
+                <h2>Super Mario Bros</h2>
+              </div>
+          </div>
+
+          <div class="galleryimgs">
+            <img src="gallerypics/oldnintendo.jpg" alt="Classic Edition" style="width:400px; height:300px;">
+            <div class="pictext">
+                <h2>Nintendo Classic Edition</h2>
+              </div>
+          </div>
+          
+          <div class="galleryimgs">
+            <img src="gallerypics/nintendo.jpg" alt="Gameboy" style="width:400px; height:300px;">
+            <div class="pictext">
+                <h2>Gameboy</h2>
+              </div>
+          </div>
+      </div>
+      
+
+
 
     <script src="scripts/boilerplate.js"></script>
     <script src="scripts/navbar.js"></script>

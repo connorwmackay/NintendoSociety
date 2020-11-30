@@ -25,9 +25,10 @@ function Event(_event_name, _date) {
 	}
 }
 
-let eventList = [ 	new Event("Quiz Night", new Date("11/12/2020")),
-					new Event("Smash Bros. Tourna.", new Date("12/4/2020")),
-					new Event("Gaming Night", new Date("1/11/2021"))
+let eventList = [ 	new Event("Quiz Night, 7PM", new Date("11/12/2020")),
+					new Event("Smash Bros. Tourna, 6PM", new Date("12/4/2020")),
+					new Event("Gaming Night, 8PM", new Date("12/14/2020")),
+					new Event("Gaming Night, 8PM", new Date("1/11/2021"))
 				];
 
 console.log(eventList);

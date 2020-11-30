@@ -1,3 +1,4 @@
+// Developed by Connor Mackay
 let navLinks = document.getElementById("navLinks");
 let nav = document.getElementsByTagName("nav")[0];
 let numClicked = 0;
@@ -18,6 +19,7 @@ function navMenu() {
 window.addEventListener("resize", function() {
     if (window.innerWidth > 1299) {
         navLinks.style.display = "block";
+        body.style.window.innerWidth
     } else {
         navLinks.style.display = "none";
     }

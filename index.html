@@ -7,8 +7,10 @@ Webpage developed by: 	Connor Mackay
 
 <html>
     <head>
-        <title>Nintendo Society</title>
+        <title>Nintendo Society - Home</title>
         <meta charset="utf-8">
+
+		<link rel="icon" type="image/png" href="images/rgu_logo.png">
         
         <!-- Our Stylesheets !-->
         <link rel="stylesheet" type="text/css" href="style/stylesheet.css">
@@ -27,22 +29,63 @@ Webpage developed by: 	Connor Mackay
 		<nav id="navbar">
 			<button id="navMenu" onclick="navMenu()"><i class="lni lni-32 lni-menu"></i></button>
 
+			<p><b>Nintendo Society</b></p>
+
 			<ul id="navLinks">
-				<li><a href="index.html" id="currentPage"><i class="lni lni-home"></i> Home</a></li>
-				<li><a href="#"><i class="lni lni-blogger"></i> Blog</a></li>
-				<li><a href="members.html"><i class="lni lni-user"></i> Members</a></li>
-				<li><a href="#"><i class="lni lni-gallery"></i> Gallery</a></li>
-				<li><a href="events_calendar.html"><i class="lni lni-calendar"></i> Events</a></li>
-				<li><a href="#"><i class="lni lni-alarm-clock"></i> History</a></li>
-				<li><a href="pokemon.html"><i class="lni lni-postcard"></i> Pokemon</a></li>
-				<li><a href="#"><i class="lni lni-layers"></i> Versions</a></li>
-				<li><a href="#"><i class="lni lni-phone"></i> Contact</a></li>
-				<li id="lastNavItem"><a href="#"><i class="lni lni-question-circle"></i> FAQ</a></li>
+				<!-- Home Page -- by Connor !-->
+				<li><a href="index.html" id="currentPage">
+					<i class="lni lni-home"></i> Home</a>
+				</li>
+
+				<!-- Blog Page -- by Neil !-->
+				<li><a href="blog.html">
+					<i class="lni lni-blogger"></i> Blog</a>
+				</li>
+
+				<!-- Members Page -- by Alex -->
+				<li><a href="members.html">
+					<i class="lni lni-user"></i> Members</a>
+				</li>
+
+				<!-- Gallery Page -- by Norvin !-->
+				<li><a href="gallery.html">
+					<i class="lni lni-gallery"></i> Gallery</a>
+				</li>
+
+				<!-- Events Page by Connor !-->
+				<li><a href="events_calendar.html">
+					<i class="lni lni-calendar"></i> Events</a>
+				</li>
+
+				<!-- History Page by Norvin !-->
+				<li><a href="history.html">
+					<i class="lni lni-alarm-clock"></i> History</a>
+				</li>
+
+				<!-- Pokemon Page by Alex !-->
+				<li><a href="pokemon.html">
+					<i class="lni lni-postcard"></i> Pokemon</a>
+				</li>
+
+				<!-- Versions Page by Adam !-->
+				<li><a href="versions.html">
+					<i class="lni lni-layers"></i> Versions</a>
+				</li>
+
+				<!-- Contact Page by Neil !-->
+				<li><a href="contact.html">
+					<i class="lni lni-phone"></i> Contact</a>
+				</li>
+
+				<!-- FAQ Page by Adam !-->
+				<li id="lastNavItem">
+					<a href="FAQpage.html"><i class="lni lni-question-circle"></i> FAQ</a>
+				</li>
 			</ul>
-			
+
 			<section id="socialLinks">
 				<ul>
-					<li><a href="#"><i class="lni lni-32 lni-twitter-filled"></i> </a></li>
+					<li><a href="https://twitter.com/SocietyNintendo" target="_blank"><i class="lni lni-32 lni-twitter-filled"></i> </a></li>
 					<li><a href="#"><i class="lni lni-32 lni-facebook-oval"></i></a></li>
 					<li><a href="#"><i class="lni lni-32 lni-instagram-filled"> </i></a></li>
 				</ul>
@@ -54,25 +97,28 @@ Webpage developed by: 	Connor Mackay
 				<section class="galleryGroup" id="homeGallery">
 				  <button class="galleryPrevBtn"></button>
 				  <button class="galleryNextBtn"></button>
-				  <img class="homeGalleryImg" src="images/switchExample.png">
-				  <img class="homeGalleryImg" src="images/nintendo1.jpg">
-				  <img class="homeGalleryImg" src="images/nintendo2.jpg">
-				  <img class="homeGalleryImg" src="images/nintendo3.png">
+				  <img class="homeGalleryImg" src="images/poster1.png">
+				  <img class="homeGalleryImg" src="images/poster_2.png">
+				  <img class="homeGalleryImg" src="images/poster3.png">
 				</section>
 
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus convallis nisl vel tortor rutrum convallis. Cras pretium, lorem sit amet ullamcorper convallis, nulla magna dapibus neque, quis finibus enim quam nec nibh. Fusce at bibendum velit, nec lacinia libero. Nam commodo varius eros, lobortis ultricies velit sodales et. Sed nec tristique tellus. Duis pretium lacus eget elementum blandit. Aliquam vel ultrices mi. Proin ut odio malesuada, consectetur sem eget, tristique odio. Nunc nisl mi, sollicitudin et maximus quis, tempus in quam. In hac habitasse platea dictumst. Donec scelerisque erat velit, eget eleifend mauris eleifend sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In semper, lorem ut faucibus pretium, mauris ipsum sodales nunc, quis blandit massa ante id magna. Donec blandit mauris eget risus ornare congue.
+					Welcome to the Nintendo Society! If you enjoy Nintendo games then this is the society for you. We
+					organise Super Smash Brothers tournaments - playing together and having fun. We also love Pokemon and
+					some of us battle it out with Pokemon cards. We also have general Nintendo gaming sessions, where you
+					can have fun and enjoy playing with the other members. The society also has a members-only Discord where
+					you can chat with your fellow members! If you are interested in our society at all, then you can register
+					your interest by pressing the button below.
 				</p>
-				<button>Find out More!</button><br />
+				<button id="homeButton"><a href="#registerSection">Register Interest</a></button><br />
 			</div>
 		</div>
 
 		<div class="grid-container" id="homeBelowMainBody">
 			<div class="grid-50 suffix-10">
-				<a class="twitter-timeline" data-lang="en" data-width="600" data-height="800" data-theme="light" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-			</div>
+				<a class="twitter-timeline" data-width="600" data-height="800" href="https://twitter.com/SocietyNintendo?ref_src=twsrc%5Etfw">Tweets by SocietyNintendo</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>			</div>
 			<div class="grid-40">
-				<form class="registerInterest">
+				<form class="registerInterest" id="registerSection">
 					<h3>Register Interest</h3>
 					<input type="text" id="firstName" name="firstName" placeholder="First Name">
 					<input type="text" id="lastName" name="lastName" placeholder="Last Name"><br />

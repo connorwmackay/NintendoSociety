@@ -1,35 +1,46 @@
 <html>
   <head>
     <!--Group: Nintendo Boyz. This page developed by Alexander McNaughton (2003647) -->
+
     <title>Pokémon</title>
+    <!-- Import unsemantic -->
     <link rel="stylesheet" href="style/unsemantic-grid-responsive.css">
-		<meta name="viewport" content=" width=device-width, initial-scale=1 minimum-scale=1 maximum-scale=1">
+    <meta name="viewport" content=" width=device-width, initial-scale=1 minimum-scale=1 maximum-scale=1">
+    <!-- Import our custom stylesheet -->
     <link rel="stylesheet" href="style/stylesheet.css" type="text/css">
+    <!-- Import navbar icons -->
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
   </head>
 
   <body>
-    <nav id="navbar">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="members.html">Members</a></li>
-				<li><a href="gallery.html">Gallery</a></li>
-				<li><a href="calendar.html">Calendar</a></li>
-				<li><a href="history.html">History</a></li>
-				<li><a href="pokemon.html" id="currentPage">Pokémon</a></li>
-				<li><a href="version.html">Versions</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="faq.html">FAQ</a></li>
-			</ul>
 
-			<section id="socialLinks">
-				<ul>
-					<li><a href="">Twitter</a></li>
-					<li><a href="">Facebook</a></li>
-					<li><a href="">Instagram</a></li>
-				</ul>
-			</section>
-		</nav>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+      <button id="navMenu" onclick="navMenu()"><i class="lni lni-32 lni-menu"></i></button>
+
+      <ul id="navLinks">
+        <li><a href="index.html" id="currentPage"><i class="lni lni-home"></i> Home</a></li>
+        <li><a href="#"><i class="lni lni-blogger"></i> Blog</a></li>
+        <li><a href="members.html"><i class="lni lni-user"></i> Members</a></li>
+        <li><a href="#"><i class="lni lni-gallery"></i> Gallery</a></li>
+        <li><a href="events_calendar.html"><i class="lni lni-calendar"></i> Events</a></li>
+        <li><a href="#"><i class="lni lni-alarm-clock"></i> History</a></li>
+        <li><a href="pokemon.html"><i class="lni lni-postcard"></i> Pokemon</a></li>
+        <li><a href="#"><i class="lni lni-layers"></i> Versions</a></li>
+        <li><a href="#"><i class="lni lni-phone"></i> Contact</a></li>
+        <li id="lastNavItem"><a href="#"><i class="lni lni-question-circle"></i> FAQ</a></li>
+      </ul>
+
+      <section id="socialLinks">
+        <ul>
+          <li><a href="#"><i class="lni lni-32 lni-twitter-filled"></i> </a></li>
+          <li><a href="#"><i class="lni lni-32 lni-facebook-oval"></i></a></li>
+          <li><a href="#"><i class="lni lni-32 lni-instagram-filled"> </i></a></li>
+        </ul>
+      </section>
+    </nav>
+
+    <!-- leftmost content of page -->
 
     <section class="subtitle">
       <h1>Pokémon</h1>
@@ -48,6 +59,8 @@
       <img src="images/trading.png" alt="trading-symbol" width="150px">
       </p>
     </div>
+
+    <!-- rightmost content of page -->
 
     <div class="grid-50">
       <section class="subtitle">

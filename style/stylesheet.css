@@ -680,7 +680,7 @@ If the screen has a width below 500px, 4 images will be aligned vertically.
 	cursor: pointer;
 }
 /*Contact page Neil -------------------------------------------------------------------------- */
-.message; {
+.message {
 	width: 10%;
 	height: 10%;
 }

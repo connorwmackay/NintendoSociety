@@ -621,6 +621,7 @@ If the screen has a width below 500px, 4 images will be aligned vertically.
 	margin-left: 3%;
 }
 
+/*Contact form ----------------------------------------------------------------------------- */
 
 .modal {
 	display: none;
@@ -694,6 +695,28 @@ If the screen has a width below 500px, 4 images will be aligned vertically.
 	height: 20vw;
 	right: 1%;
 	width: 30vw;
+}
+
+.map iframe {
+	float: right;
+	padding: 10px;
+}
+
+/*Members page and Pokemon page (Alex McNaughton) -------------------------------------------------------------------------- */
+
+.subtitle {
+  font-family: 'Epilogue', sans-serif;
+  background-color: #96b6eb;
+  text-align: center;
+}
+.pfp {
+  width: 250px;
+  height: 250px;
+}
+.content {
+  font-family: 'Epilogue', sans-serif;
+  padding: 5px;
+  background-color: white;
 }
 
 /*
